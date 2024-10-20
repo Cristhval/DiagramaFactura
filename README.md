@@ -19,22 +19,22 @@ imprimir la factura, enviar la factura al correo electrónico y la de registrar 
 7. Promoción: esta clase tiene los atributos descripción de la promoción, el porcentaje de descuento y como método aplicar la promoción.
 8. Método de pago: esta clase tiene como atributo el monto a pagado y como método la validación del pago, además está asociada a tres
 subclases las cuales son:
- Pago con transferencia: tiene como atributos numero de transferencia y banco de origen.
- Pago con Efectivo: tiene como atributo el cambio.
- Pago con Tarjeta: tiene como atributos el número de tarjeta, el titular y vencimiento.
+- Pago con transferencia: tiene como atributos numero de transferencia y banco de origen.
+- Pago con Efectivo: tiene como atributo el cambio.
+- Pago con Tarjeta: tiene como atributos el número de tarjeta, el titular y vencimiento.
 9. Historial de factura: esta clase tiene como atributo la lista de facturas y sus métodos son agregar factura, consultar factura por fecha,
 consultar factura por cliente, consultar factura por monto.
 
 
 Relaciones
- La relación entre cliente y pedido es de asociación por que refleja que el cliente puede tener de uno a muchos pedidos.
- La relación entre pedido y factura es de asociación y esta refleja que abra una factura por un pedido.
- La relación entre pedido e item pedido es de asociación en esta relación se muestra que de un pedido puede haber muchas cantidades que
+- La relación entre cliente y pedido es de asociación por que refleja que el cliente puede tener de uno a muchos pedidos.
+- La relación entre pedido y factura es de asociación y esta refleja que abra una factura por un pedido.
+- La relación entre pedido e item pedido es de asociación en esta relación se muestra que de un pedido puede haber muchas cantidades que
 se pueden pedir.
- La relación entre item pedido y producto es de asociación y refleja la cantidad que se pidió de un producto desde uno a muchos.
- La relación entre producto e item factura es de asociación y refleja los productos de uno a muchos para calcular el subtotal.
- La relación entre item factura y de factura es de composición porque la factura depende de los datos de item factura para poder llevar a
+- La relación entre item pedido y producto es de asociación y refleja la cantidad que se pidió de un producto desde uno a muchos.
+- La relación entre producto e item factura es de asociación y refleja los productos de uno a muchos para calcular el subtotal.
+- La relación entre item factura y de factura es de composición porque la factura depende de los datos de item factura para poder llevar a
 cabo su proceso.
- La relación entre factura y promoción es de asociación porque puede haber de 0 a muchas promociones.
- La relación entre factura y historial de facturas es de agregación porque la clase historial de facturas agrega varias facturas, pero las
+- La relación entre factura y promoción es de asociación porque puede haber de 0 a muchas promociones.
+- La relación entre factura y historial de facturas es de agregación porque la clase historial de facturas agrega varias facturas, pero las
 facturas no dependen del historial para existir.
