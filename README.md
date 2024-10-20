@@ -38,3 +38,7 @@ cabo su proceso.
 - La relación entre factura y promoción es de asociación porque puede haber de 0 a muchas promociones.
 - La relación entre factura y historial de facturas es de agregación porque la clase historial de facturas agrega varias facturas, pero las
 facturas no dependen del historial para existir.
+
+link al pdf: 
+
+https://github.com/Cristhval/DiagramaFactura/blob/main/Diagrama%20de%20Modulo%20de%20facturación%20y%20pagos.pdf 
